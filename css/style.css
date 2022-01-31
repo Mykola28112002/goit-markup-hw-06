@@ -652,7 +652,7 @@ color: #212121;
   position: absolute;
   width: 18px;
   height: 18px;
-  transform: translateY(+11px) translateX(+12px); 
+  transform: translateY(+11px) translateX(-435px); 
 }
 .form-input {
 width: 448px;
@@ -673,10 +673,15 @@ transition-property: barder-color;
  .form-link {
    text-decoration: none;
  }
-.form-link .form-input:focus,
-.form-link .form-input:hover {
+.form-input:focus {
  border-color: #2196F3;
  
+}
+.form-input:focus ~ .form-svg {
+  fill: #2196F3;
+   transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-textarea:hover,
 .form-textarea:focus {
@@ -686,12 +691,9 @@ transition-property: barder-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.form-link:hover .form-svg {
-fill: #2196F3;
- transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+
+
 .form-textarea {
   cursor: pointer;
 }
@@ -726,13 +728,9 @@ border-radius: 4px;
   -moz-appearance: none;
  appearance: none;
  position: absolute;
-  transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
-.checkbox:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
 .form-button {
   margin-top: 30px;
   margin-bottom: 29px;
@@ -773,7 +771,7 @@ margin-left: 7px;
   border-radius: 1px;
   outline: 1px solid #000;
   background-size: contain;
-margin-right≠: 7px;
+
 
 }
 .form-conditions {
@@ -788,6 +786,10 @@ margin-top: 20px;
 background-color: #2196F3;
 outline: 1px solid #2196F3;
 background-origin: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition-property: box-shadow, background-color, outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .............................................................................. */
