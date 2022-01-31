@@ -676,10 +676,7 @@ cursor: pointer;
 .container-form [name="comment"] {
   cursor: pointer;
 }
- /* .container-form [type="text"]:hover .form-svg,
- .container-form [type="text"]:focus .form-svg {
-fill: #2196F3;
-} */
+
 .form-link:hover .form-svg {
 fill: #2196F3;
 }
@@ -736,6 +733,7 @@ font-weight: 700;
 font-size: 16px;
 line-height: 1.9;
 color: #FFFFFF;
+cursor: pointer;
 }
 .form-button:focus,
 .form-button:hover {
@@ -750,7 +748,7 @@ justify-content: center;
 .form-conditions-text {
 font-size: 14px;
 line-height: 1.9;
-
+cursor: pointer;
 color: #757575;
 }
 
