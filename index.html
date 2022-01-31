@@ -281,52 +281,58 @@
             
                 <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
 
-                <div class="container-form">
+                <ul class="container-form">
  
-                    <div class="form-link">
+                    <li class="form-link">
                         <label class="form-label" for="name">
-                            Имя
+                            Имя     
                         </label>
                         <svg class="form-svg">
                             <use href="images/symbol-defs.svg#icon-Vector-1"></use>
                         </svg>
-                        <input type="text" name="user-name" id="name">
-                    </div>
+                        <input class="form-input" type="text" name="user-name" id="name">
+                    </li>
                    
-                    <div class="form-link">
-                        <label class="form-label" for="tel">
+                    <li class="form-link">
+                        <label class="form-label" for="tel" >
                             Телефон
                         </label>
                         <svg class="form-svg">
                             <use href="images/symbol-defs.svg#icon-Vector-2"></use>
                         </svg>
-                        <input type="tel" id="tel">
-                    </div>
+                        <input class="form-input" type="tel" id="tel" name="tel">
+                    </li>
                 
-                    <div class="form-link">
+                    <li class="form-link">
                         <label class="form-label" for="mail">
                             Почта
                         </label>
                         <svg class="form-svg">
                             <use href="images/symbol-defs.svg#icon-Vector-3"></use>
                         </svg>
-                        <input type="mail" id="mail">
-                    </div>
+                        <input class="form-input" type="mail" id="mail" name="mail">
+                    </li>
                     
-                    <label class="form-label" for="comment">Комментарий</label>
-                    <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
-                                    
-                </div>
-                <div class="form-display-flex">
-                    <input type="checkbox" name="conditions" value="conditions" id="conditions">
-                    <label class="form-conditions" for="conditions"><span class="form-conditions-text">
+                    <li>
+                        <label class="form-label" for="comment">Комментарий</label>
+                        <textarea class="form-textarea" name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+                    </li>            
+                
+                    <li class="form-item">  
+                        <label class="form-conditions">
+                            <input class="checkbox" type="checkbox" name="conditions" value="conditions">
+                            <svg class="icon">
+                                <use href="images/symbol-defs.svg#icon-icon-check"></use>
+                            </svg>
+                            <span class="form-conditions-text">
                                 Соглашаюсь с рассылкой и принимаю <a class="conditions-link" href="">Условия
                                     договора</a>
-                            </span></label>
+                            </span>
+                        </label>
                     
-                    
-                    <button class="form-button" type="submit">Отправить</button>
-                </div>
+                        <button class="form-button" type="submit">Отправить</button>
+                    </li>
+                </ul>
         </form>
     </div>
 </div>
