@@ -510,7 +510,7 @@ fill: #fff;
 /* Форма */
 
 .footer-form {
-  margin-left: 93px;
+  margin-left: auto;
 }
 .footer-form-container {
   margin-top: 20px;
@@ -734,7 +734,6 @@ color: #757575;
 .form-button {
     border: transparent;
   margin-top: 30px;
-  margin-bottom: 29px;
   padding: 10px 55px;
   border-radius: 4px;
   background: #2196F3;
